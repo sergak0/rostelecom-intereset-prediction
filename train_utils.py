@@ -1,19 +1,15 @@
-import cv2
 import random
 import json
 import os
 from torch.utils.data import Dataset, DataLoader
-import torch, torchvision
+import torch
 import numpy as np
 import pandas as pd
 import torch
 import torch.nn as nn
-import torchvision
 from torch.nn.utils.rnn import pad_sequence
 
 from tqdm import tqdm
-import torchvision
-from torchvision import datasets, models, transforms
 from sklearn.metrics import precision_score
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -87,7 +83,6 @@ def train_model(model, train_loader, test_loader, criterion, optimizer, num_epoc
         
         if best_loss < history['test']['precision_in_top'][-1]:
             best_loss = history['test']['precision_in_top'][-1]
-        #   torch.save(model, '/content/drive/MyDrive/НТИ ИИ /team/sergey_models/{}_best'.format(save_name))
             torch.save(model, '{}_best'.format(save_name))
             
             if verbose:

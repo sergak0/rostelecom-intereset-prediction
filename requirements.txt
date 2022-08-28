@@ -1,0 +1,11 @@
+pandas
+numpy
+sklearn
+torch
+matplotlib
+plotly
+importlib
+catboost
+tqdm
+requests
+beautifulsoup4
