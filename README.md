@@ -11,9 +11,17 @@ cd rostelecom-intereset-prediction
 python -m pip install -r requirements.txt
 ```
 
+также можно загрузить данные хакатона
+
+```python
+wget -O data/предсказание_спроса.zip https://ai-data.obs.ru-moscow-1.hc.sbercloud.ru/%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5_%D1%81%D0%BF%D1%80%D0%BE%D1%81%D0%B0.zip
+cd data && unzip предсказание_спроса.zip
+cd rostelecom-intereset-prediction
+```
+
 Работа решения может быть продемонстрирована в файле [main.ipynb](https://github.com/sergak0/rostelecom-intereset-prediction/blob/main/main.ipynb)
 
-## Data-Ext
+## Data-Ext (внешние)
 
 1) Акции и курсы валют - [источник](https://www.finam.ru/profile/moex-akcii/m-video/export/?market=200&em=19737&token=03ANYolqvdH_OCpqOmKHTuwUlhDZGPJnE5jDfayGZllR8LitkREFpwwJ2bDj_kyHDDQzy8sofBMBHo0Lmqlfj7hlkwuiXjog431QHWu_mjDxj2GCOXiWPfhtyZROj4b-hQrUqlIDzjTqpZEviGeAY_7QfjhtXVhDy5iCcOoTFmMwyPoned99OGRSmRHYQoLdKkjea_DSsoKywjBn--1Un1YSr0iYwwef4orGyZ5nZz-5gaDqwHRu_ZkOvFtXGlcpJIghmaNxTIXltOtrtU5pH-ygcPJNKa-If-G9aD1iItLoNe5lt7r00GWFVlak-ZhhmvuxSc3iyiURdZwAtaTcR8uefEpyAkzvHhBELBC16CTf5zxwhn_XcHeuB0v8socMYJgEIYRwLmN8neSPsekpg556u9F2aSLEZcwFkgsYQabcnDlW5Z9E_-qWOVmrq79oWbO61RKhxx6URvT0L0c4Afg0CyeOw7MGqk6DrKPXH3FE_9trF81WKWHM9ZsFK6QvaqDw5akM0GCd8J&code=MVID&apply=0&df=1&mf=0&yf=2020&from=01.01.2020&dt=1&mt=7&yt=2022&to=01.08.2022&p=10&f=MVID_200101_220801&e=.csv&cn=MVID&dtf=3&tmf=1&MSOR=1&mstime=on&mstimever=1&sep=1&sep2=1&datf=1&at=1)
 2) Короновирус - [источник](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series)
