@@ -33,3 +33,8 @@ python -m pip install -r requirements.txt
 ● Жалобы на плохой интернет\
 ● Анализа запросов по конкурентам\
 ● Динамика интереса к Ростелекому
+
+### Парсинг данных
+Если хотите воспроизвести парсинг данных, а не использовать уже спаршенные таблички, то можете запустить следующие блоноты
+* [parse_ext.ipynb](https://github.com/sergak0/rostelecom-intereset-prediction/blob/main/parse_ext.ipynb)
+* [city_population.ipynb](https://github.com/sergak0/rostelecom-intereset-prediction/blob/main/city_population.ipynb)
