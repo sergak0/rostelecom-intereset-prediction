@@ -14,9 +14,8 @@ python -m pip install -r requirements.txt
 также можно загрузить данные хакатона
 
 ```python
-wget -O data/предсказание_спроса.zip https://ai-data.obs.ru-moscow-1.hc.sbercloud.ru/%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5_%D1%81%D0%BF%D1%80%D0%BE%D1%81%D0%B0.zip
-cd data && unzip предсказание_спроса.zip
-cd rostelecom-intereset-prediction
+!wget -O data/предсказание_спроса.zip https://ai-data.obs.ru-moscow-1.hc.sbercloud.ru/%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5_%D1%81%D0%BF%D1%80%D0%BE%D1%81%D0%B0.zip
+!cd data && unzip предсказание_спроса.zip
 ```
 
 Работа решения может быть продемонстрирована в файле [main.ipynb](https://github.com/sergak0/rostelecom-intereset-prediction/blob/main/main.ipynb)
